@@ -59,6 +59,25 @@ markdown_extensions:
 # children) on first use — see SESSION_SUMMARIZER.md.
 nav:
   - Home: index.md
+  - Sessions:
+      - "1. Twelve Missing": sessions/2026-07-05.md
   - Wiki:
       - Player Characters:
+          - Icarus: wiki/pcs/icarus.md
+          - Wilonet: wiki/pcs/wilonet.md
+          - Grano: wiki/pcs/grano.md
           - Vorhan Aru Nyshara: wiki/pcs/vorhan-aru-nyshara.md
+      - NPCs:
+          - Jonas Dawn: wiki/npcs/jonas-dawn.md
+          - Miriam Dawn: wiki/npcs/miriam-dawn.md
+          - Old Marnie: wiki/npcs/old-marnie.md
+          - The Silverbrier Head of Security: wiki/npcs/silverbrier-head-of-security.md
+      - Factions:
+          - The Silverbrier Family: wiki/factions/silverbrier-family.md
+          - The Church of the Dawn: wiki/factions/church-of-the-dawn.md
+      - Locations:
+          - Timberfall: wiki/locations/timberfall.md
+          - The Graylight Forest: wiki/locations/graylight-forest.md
+          - The Fat Goat: wiki/locations/the-fat-goat.md
+          - Ol' Marnie's: wiki/locations/ol-marnies.md
+          - The Silverbrier Estate: wiki/locations/silverbrier-estate.md

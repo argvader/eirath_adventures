@@ -272,9 +272,10 @@ a speaker in the transcript (he voices all NPCs and narration).
 
 | Player | Character | Ancestry | Class   |
 |--------|-----------|----------|---------|
-| Chris  | Icarus    | Human    | Warlock |
-| Mike   | Wilonet   | Drow     | Rogue   |
+| Joe    | Icarus    | Human    | Warlock |
+| Lindsey| Wilonet   | Drow     | Rogue   |
 | Darryl | Grano     | Dwarf    | Cleric  |
+| Gary   | Vorhan Anu Nyshara | Shadar Kai | Druid |
 
 > The Deepgram transcript garbles both **Wilonet** ("Willa net", "Willinette",
 > "Will O'Nett", "Willa Annette") and **Grano** ("Grono", "Guano"). Use the spellings in
