@@ -1,6 +1,8 @@
 # **Vorhan Aru Nyshara**
 
-### **Shadar-kai Wildfire Druid, Mourning-singer**
+**Player:** Gary · **Ancestry:** Shadar-kai · **Class:** Druid
+
+*Wildfire Druid, Mourning-singer*
 
 ---
 

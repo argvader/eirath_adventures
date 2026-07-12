@@ -4,7 +4,9 @@ title: "Icarus"
 
 # Icarus
 
-### **Human Warlock — Mercenary**
+**Player:** Joe · **Ancestry:** Human · **Class:** Warlock
+
+*Mercenary*
 
 ## Overview
 

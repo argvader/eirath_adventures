@@ -4,7 +4,9 @@ title: "Wilonet"
 
 # Wilonet
 
-### **Drow Rogue — Outlander**
+**Player:** Lindsey · **Ancestry:** Drow · **Class:** Rogue
+
+*Outlander*
 
 ## Overview
 

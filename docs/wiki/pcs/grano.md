@@ -4,7 +4,9 @@ title: "Grano"
 
 # Grano
 
-### **Dwarf Cleric — Last of his Monastery**
+**Player:** Darryl · **Ancestry:** Dwarf · **Class:** Cleric
+
+*Last of his Monastery*
 
 ## Overview
 

@@ -28,6 +28,17 @@ Update or create entries in `docs/wiki/` organized by category:
 Update existing PC files with new information from this session — abilities used,
 character development, relationships formed.
 
+> **Byline.** Every PC page carries a metadata line directly under its H1, drawn
+> from the **Participants** table at the bottom of this file:
+>
+> ```markdown
+> **Player:** Joe · **Ancestry:** Human · **Class:** Warlock
+> ```
+>
+> Separate the fields with `·`. If the character has a short role or epithet
+> (`Mercenary`, `Mourning-singer`), put it on its own italic line underneath. Do
+> not also repeat ancestry/class in a `###` subtitle — the byline replaces it.
+
 > **Portraits.** PC pages show a portrait automatically **if** an image named after
 > the page slug exists at `docs/assets/pcs/<slug>.png` (or `.jpg`/`.jpeg`/`.webp`) —
 > these are player-provided art, dropped in by hand. Do not generate or embed them;
