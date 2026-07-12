@@ -267,10 +267,18 @@ Find the newest date folder for the latest session.
 
 ### Participants
 
-**DM** is the **Dungeon Master** — not a player, but their voice appears as
-a speaker in the transcript (they voice all NPCs and narration).
+**Ian** is the **Dungeon Master** — he is not a player, but his voice appears as
+a speaker in the transcript (he voices all NPCs and narration).
 
-_No player roster recorded yet — add players and their characters here after your first session._
+| Player | Character | Ancestry | Class   |
+|--------|-----------|----------|---------|
+| Chris  | Icarus    | Human    | Warlock |
+| Mike   | Wilonet   | Drow     | Rogue   |
+| Darryl | Grano     | Dwarf    | Cleric  |
+
+> The Deepgram transcript garbles both **Wilonet** ("Willa net", "Willinette",
+> "Will O'Nett", "Willa Annette") and **Grano** ("Grono", "Guano"). Use the spellings in
+> the table above when writing wiki and session pages, whatever the transcript says.
 
 ---
 

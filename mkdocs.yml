@@ -59,3 +59,6 @@ markdown_extensions:
 # children) on first use — see SESSION_SUMMARIZER.md.
 nav:
   - Home: index.md
+  - Wiki:
+      - Player Characters:
+          - Vorhan Aru Nyshara: wiki/pcs/vorhan-aru-nyshara.md
