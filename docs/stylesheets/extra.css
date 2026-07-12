@@ -1,0 +1,169 @@
+/* ============================================================================
+   Eirath Adventures — campaign theme
+   Accent + secondary accent over a dark base, with a light counterpart.
+   Shades are derived from three tokens via color-mix so the whole palette
+   moves together when you retune #c0563f / #d99a3f /
+   #171314.
+   ========================================================================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&display=swap");
+
+:root {
+  --accent: #c0563f;
+  --accent-bright: color-mix(in srgb, #c0563f 80%, white);
+  --accent-deep: color-mix(in srgb, #c0563f 78%, black);
+  --secondary-accent: #d99a3f;
+}
+
+/* ---------------------------------------------------------------- Dark base */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: color-mix(in srgb, #171314 88%, black);
+  --md-primary-fg-color--light: color-mix(in srgb, #171314 80%, white 8%);
+  --md-primary-fg-color--dark: color-mix(in srgb, #171314 78%, black);
+  --md-accent-fg-color: var(--accent-bright);
+
+  --md-default-bg-color: #171314;
+  --md-default-bg-color--light: color-mix(in srgb, #171314 92%, white 8%);
+  --md-default-fg-color: color-mix(in srgb, #c0563f 12%, white);
+
+  --md-typeset-color: color-mix(in srgb, #c0563f 10%, white);
+  --md-typeset-a-color: var(--accent-bright);
+
+  --md-code-bg-color: color-mix(in srgb, #171314 85%, white 6%);
+  --md-code-fg-color: var(--accent-bright);
+}
+
+/* ------------------------------------------------------------- Light counterpart */
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: var(--accent-deep);
+  --md-primary-fg-color--light: var(--accent);
+  --md-primary-fg-color--dark: color-mix(in srgb, #c0563f 60%, black);
+  --md-accent-fg-color: var(--secondary-accent);
+
+  --md-default-bg-color: color-mix(in srgb, #c0563f 10%, white);
+  --md-default-bg-color--light: color-mix(in srgb, #c0563f 5%, white);
+  --md-default-fg-color: color-mix(in srgb, #171314 82%, black);
+
+  --md-typeset-color: color-mix(in srgb, #171314 82%, black);
+  --md-typeset-a-color: var(--accent-deep);
+
+  --md-code-bg-color: color-mix(in srgb, #c0563f 16%, white);
+  --md-code-fg-color: color-mix(in srgb, #c0563f 60%, black);
+}
+
+/* ------------------------------------------------------------------- Typography */
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-header__title,
+.md-nav__title {
+  font-family: "Cinzel", "Marcellus", serif;
+  letter-spacing: 0.02em;
+}
+
+.md-typeset h1,
+.md-typeset h2 {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+[data-md-color-scheme="default"] .md-typeset h1,
+[data-md-color-scheme="default"] .md-typeset h2 {
+  color: var(--accent-deep);
+}
+
+/* Divider under section headings. */
+.md-typeset h2 {
+  padding-bottom: 0.3rem;
+  border-bottom: 2px solid var(--accent-deep);
+}
+
+/* Gilded horizontal rule. */
+.md-typeset hr {
+  border: none;
+  height: 2px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--accent-deep),
+    var(--accent),
+    var(--accent-deep),
+    transparent
+  );
+}
+
+/* ------------------------------------------------------- Framed wiki + scene art */
+/* PC/NPC portraits & location art injected by hooks/wiki_images.py. */
+.md-typeset img.wiki-image {
+  display: block;
+  width: 100%;
+  max-width: 240px;
+  margin: 0.4rem 1.4rem 1.4rem;
+  border: 2px solid var(--accent-deep);
+  border-radius: 4px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.45);
+}
+
+/* PC & NPC portraits: float to the right so the intro line and the Overview
+   section sit to their left. Every section AFTER Overview (the second H2 onward)
+   clears below the pairing, so the rest of the page runs full width beneath it.
+   Scoped to .wiki-portrait, so location banners are unaffected. */
+.md-typeset img.wiki-portrait {
+  float: right;
+  margin: 0.3rem 0 1rem 0.5rem;
+}
+
+/* Markdown wraps the injected portrait <img> in a <p>, so anchor off that paragraph
+   with :has() to reach the sibling headings (a plain `img ~ h2` never matches — the
+   img is a child of the <p>, not a sibling of the h2).
+
+   The heading beside the floated portrait establishes a block formatting context so
+   its box — and the divider — shrinks to the space LEFT of the portrait instead of
+   running underneath it. This shrink is automatic and responsive (unlike
+   `width: calc(100% - 250px)`, which collapses on narrow screens). margin-right
+   holds the divider a deliberate gap short of the image, while body text still wraps
+   close via the portrait's own 0.5rem margin. */
+.md-typeset p:has(> img.wiki-portrait) ~ h2 {
+  display: flow-root;
+  margin-right: 1.5rem;
+}
+
+/* Sections below the portrait run full width again. */
+.md-typeset p:has(> img.wiki-portrait) ~ h2 ~ h2 {
+  clear: right;
+  margin-right: 0;
+}
+
+/* The dramatized "## The Scene" image at the bottom of a session page. */
+.md-typeset h2#the-scene + p img,
+.md-typeset img.scene-image {
+  display: block;
+  width: 100%;
+  margin: 0.6rem auto 1.4rem;
+  border: 2px solid var(--accent-deep);
+  border-radius: 4px;
+  box-shadow: 0 8px 26px rgba(0, 0, 0, 0.5);
+}
+
+/* --------------------------------------------------------------- Home hero image */
+.md-typeset img.home-hero {
+  display: block;
+  width: 100%;
+  margin: 0 0 1.6rem;
+  border: 3px solid var(--accent-deep);
+  border-radius: 6px;
+  box-shadow: 0 10px 34px rgba(0, 0, 0, 0.55);
+}
+
+/* ------------------------------------------------------------------ Nav accents */
+.md-nav__item .md-nav__link--active,
+.md-nav__link:hover {
+  color: var(--accent-bright);
+}
+
+/* Tables: gilded header row. */
+.md-typeset table:not([class]) th {
+  background: var(--accent-deep);
+  color: #171314;
+  font-family: "Cinzel", serif;
+}
