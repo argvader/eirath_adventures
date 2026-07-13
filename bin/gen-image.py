@@ -27,9 +27,17 @@ import urllib.request
 API_URL = "https://api.openai.com/v1/images/generations"
 
 # Appended to every prompt so scene, location, and hero art share one look —
-# the signature style of the Eirath Adventures campaign.
+# the signature style of the Eirath Adventures campaign. The world is grim, but the
+# art must stay legible: name the light source and keep the midtones open, or the
+# model renders a near-black canvas with no readable detail.
 STYLE_SUFFIX = (
-    " — cinematic grim dark fantasy illustration, muted iron and blood palette, dramatic low light, painterly, no text or lettering."
+    " — painterly gothic fantasy concept art in the style of The Witcher: Slavic folk-horror"
+    " architecture, weathered timber and wet stone, rich earthy color — moss green, rust ochre,"
+    " oxidized copper, deep crimson and cold steel-blue accents. Overcast daylight or warm amber"
+    " lantern light as a clear, motivated light source; strong atmospheric depth with mist catching"
+    " the light rather than swallowing it. Well-exposed with open midtones and readable detail in"
+    " the shadows — moody, never murky or crushed to black. Crisp brushwork, high detail,"
+    " no text or lettering."
 )
 
 # gpt-image-1 accepts a fixed set of sizes.
