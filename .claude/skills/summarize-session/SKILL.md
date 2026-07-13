@@ -36,8 +36,9 @@ Run the project's session summarizer over the newest raw session.
 4. When done, remind the user they can preview with `mkdocs serve` and publish with
    the **publish-site** skill.
 
-> This skill does **not** cover recording or transcription (OBS / Deepgram / ffmpeg /
-> jq) — those stay manual per `README.md`. It starts from an existing
-> `sessions-raw/<DATE>/transcript.md`.
+> This skill starts from an existing `sessions-raw/<DATE>/transcript.md`. It does **not**
+> cover recording or the Deepgram request (OBS / ffmpeg / curl) — those stay manual per
+> `README.md`. To turn a `session.deepgram.json` into that transcript, use the
+> **build-speaker-mapping** and **translate-deepgram** skills first.
 >
 > To redo an already-published session, first run `bin/unpublish-session.sh <DATE>`.

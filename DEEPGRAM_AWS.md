@@ -257,4 +257,5 @@ is small and cheap to keep.
 | Very long recording (multi-hour)                      | Tier 2  |
 
 Once you have a good `session.deepgram.json`, continue with **step 3 (Format the
-transcript)** in [`README.md`](README.md).
+transcript)** in [`README.md`](README.md) — or just run the **build-speaker-mapping**
+and **translate-deepgram** skills, which do that step for you.
