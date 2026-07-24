@@ -27,6 +27,10 @@ Old Marnie is the party's best source on the forest, and what he gave them was t
 
 He asked the party to bring back any **nightroot** they come across — a dark blue, vine-like plant that grows out in the Graylight. He can "turn it into something." He drew them a sketch of it before they left. He did not say what it becomes, and nobody thought to ask.
 
+**They have it.** A good bundle, harvested deep in the forest on a 24. It cost more than he could have known: the first nightroot they found was a **Nightroot Asp** wearing the plant's shape, and it opened Grano's throat and put him on the ground before Icarus killed it. The real root was lying a few feet from the snake that had been imitating it, and Wilonet flatly refused to be the one to cut it the second time.
+
+Marnie does not yet know any of this. He also does not know they are bringing him four vials of the asp's venom.
+
 ## Relationships
 
 - **Wilonet** — a genuine old friend. She has known him for years and vouched for him to the others; she asked to do the talking, and asked the others, pointedly, not to rough him up.
@@ -37,3 +41,5 @@ He asked the party to bring back any **nightroot** they come across — a dark b
 ## Session History
 
 **[Twelve Missing](../../sessions/2026-07-05.md)** — Gave the party the only real intelligence they have about the Graylight, and a standing job. Had no potions left to sell.
+
+**[I Think We're Still Here](../../sessions/2026-07-19.md)** — Not present, and vindicated anyway. *Don't trust everything you see out there* stopped being advice and started being the rule the party is playing by. His nightroot is in Wilonet's pack.

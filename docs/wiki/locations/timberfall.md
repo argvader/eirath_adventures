@@ -21,6 +21,7 @@ Timberfall was founded by five families, all of them competing for the same priz
 - The [Fat Goat](the-fat-goat.md) — the one tavern.
 - [Ol' Marnie's](ol-marnies.md) — the alchemist's hut.
 - The [Silverbrier Estate](silverbrier-estate.md) — the nicest house in a town with no nice houses.
+- The [logging camp](the-logging-camp.md) — days out in the Graylight, where the twelve were sent. Empty.
 
 ## The Missing
 

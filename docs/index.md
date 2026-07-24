@@ -86,3 +86,4 @@ them.
 | # | Session | Date |
 | --- | --- | --- |
 | 1 | [Twelve Missing](sessions/2026-07-05.md) | 2026-07-05 |
+| 2 | [I Think We're Still Here](sessions/2026-07-19.md) | 2026-07-19 |
